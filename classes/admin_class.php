@@ -7,7 +7,7 @@ class Admin_Class
 
 	public function __construct()
 	{ 
-        $host_name='tmsfpcloud.mysql.database.azure.com';
+        	$host_name='tmsfpcloud.mysql.database.azure.com';
 		$user_name='tmsfp';
 		$password='Qwerty12345';
 		$db_name='etms_db';
