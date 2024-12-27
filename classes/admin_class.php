@@ -7,13 +7,14 @@ class Admin_Class
 
 	public function __construct()
 	{ 
-        $host_name='localhost';
-		$user_name='root';
-		$password='';
+        $host_name='tmsfpcloud.mysql.database.azure.com';
+		$user_name='tmsfp';
+		$password='Qwerty12345';
 		$db_name='etms_db';
+		$port=3306
 
 		try{
-			$connection=new PDO("mysql:host={$host_name}; dbname={$db_name}", $user_name,  $password);
+			$connection=new PDO("mysql:host={$host_name}; dbname={$db_name}", $user_name,  $password, $port);
 			$this->db = $connection; // connection established
 		} catch (PDOException $message ) {
 			echo $message->getMessage();
